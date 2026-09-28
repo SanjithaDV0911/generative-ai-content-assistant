@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generative AI Content Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>✨ Generative AI Content Assistant</h1>
+    <p>Generate ideas, captions, emails and refine your content with AI-inspired assistance.</p>
+  </header>
+
+  <main class="card">
+    <label for="type">Content Type</label>
+    <select id="type">
+      <option>Social Media Caption</option>
+      <option>Blog Idea</option>
+      <option>Professional Email</option>
+      <option>Product Description</option>
+    </select>
+
+    <label for="prompt">Your Prompt</label>
+    <textarea id="prompt" placeholder="Example: Create a motivational caption for students..."></textarea>
+
+    <div class="buttons">
+      <button onclick="generateContent()">Generate Content</button>
+      <button class="secondary" onclick="refineContent()">Refine Text</button>
+    </div>
+
+    <label for="output">Generated Result</label>
+    <textarea id="output" readonly placeholder="Your generated content will appear here..."></textarea>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
